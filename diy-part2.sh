@@ -68,8 +68,8 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 # Add driver for rtl8821cu & rtl8812au-ac
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8812au-ac
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8812au-ac
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8821cu
 popd
 
 # Use Lienol's https-dns-proxy package
