@@ -22,6 +22,9 @@ popd
 mkdir package/community
 pushd package/community
 
+# Add Lienol's Packages
+git clone --depth=1 https://github.com/Lienol/openwrt-package
+
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
@@ -59,3 +62,7 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
+# Fix mt76 wireless driver
+pushd package/kernel/mt76
+sed -i '/mt7662u_rom_patch.bin/a\\techo mt76-usb disable_usb_sg=1 > $\(1\)\/etc\/modules.d\/mt76-usb' Makefile
+popd
