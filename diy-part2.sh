@@ -28,27 +28,12 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
-# Add luci-app-vssr <M>
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
-
 # Add mentohust & luci-app-mentohust
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
-# Add luci-proto-minieap
-git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
-
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
-
-# Add luci-app-onliner
-git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
-
-# Add luci-app-dockerman
-rm -rf ../lean/luci-app-docker
-git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
@@ -57,10 +42,6 @@ rm -rf ../lean/luci-theme-argon
 
 # Add subconverter
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
-
-# Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
-popd
 
 # Fix mt76 wireless driver
 pushd package/kernel/mt76
