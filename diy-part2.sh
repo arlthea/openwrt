@@ -27,6 +27,7 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
+git clone --depth=1 -b luci https://github.com/xiaorouji/openwrt-passwall
 
 # Add mentohust & luci-app-mentohust
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
