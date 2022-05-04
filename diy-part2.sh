@@ -45,3 +45,7 @@ rm -rf ../lean/luci-theme-argon
 # Add subconverter
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
+# Fix mt76 wireless driver
+pushd package/kernel/mt76
+sed -i '/mt7662u_rom_patch.bin/a\\techo mt76-usb disable_usb_sg=1 > $\(1\)\/etc\/modules.d\/mt76-usb' Makefile
+popd
