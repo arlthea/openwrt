@@ -44,4 +44,4 @@ rm -rf ../lean/luci-theme-argon
 
 # Add subconverter
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
-
+popd
