@@ -7,6 +7,8 @@ CONFIG_TARGET_ROOTFS_SQUASHFS=y
 CONFIG_PACKAGE_coremark=n
 CONFIG_PACKAGE_ddns-scripts=n
 
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 CONFIG_PACKAGE_luci-app-accesscontrol=n
 CONFIG_PACKAGE_luci-app-ddns=n
 CONFIG_PACKAGE_luci-app-nlbwmon=n
